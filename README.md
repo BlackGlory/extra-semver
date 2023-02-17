@@ -10,8 +10,25 @@ yarn add extra-semver
 ### simplify
 ```ts
 function simplify(version: string): string
+```
 
-expect(simplify('1.0.0')).toBe('1')
-expect(simplify('1.1.0')).toBe('1')
-expect(simplify('0.1.0')).toBe('0.1')
+```ts
+simplify('1.0.0') // '1'
+simplify('1.1.0') // '1'
+simplify('0.1.0') // '0.1'
+```
+
+### createMigration
+```ts
+function createMigration(
+  semverCondition: string
+, resultVersion: string
+, fn: () => Awaitable<void>
+): (currentVersion: string) => Promise<string>
+```
+
+```ts
+createMigration('^1.0.0', '2.0.0', () => {
+  // ...
+})
 ```
