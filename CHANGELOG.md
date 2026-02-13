@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/BlackGlory/extra-semver/compare/v0.2.2...v0.2.3) (2026-02-13)
+
+
+### Bug Fixes
+
+* add the missing dependency `justypes` ([3e7f2c2](https://github.com/BlackGlory/extra-semver/commit/3e7f2c227a23338dcf3a54a81a6b9d3cf3c4b219))
+
 ### [0.2.2](https://github.com/BlackGlory/extra-semver/compare/v0.2.1...v0.2.2) (2023-06-11)
 
 
